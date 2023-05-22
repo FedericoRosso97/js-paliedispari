@@ -28,8 +28,9 @@ let numeroUtente=parseInt(prompt('scegli un numero da 1 a 5'));
 console.log(numeroUtente);
 
  function numeroComputer(number){
-    let numeroPc=Math.floor((Math.random()*5)+1);
+    let numero=Math.floor((Math.random()*5)+1);
     console.log(numero);
+    return numero;
  }
 
  function pariDispari(num1,num2){
