@@ -27,20 +27,29 @@ let numeroUtente=parseInt(prompt('scegli un numero da 1 a 5'));
 
 console.log(numeroUtente);
 
- function numeroComputer(number){
-    let numero=Math.floor((Math.random()*5)+1);
-    console.log(numero);
+let numero=Math.floor((Math.random()*5)+1);
+console.log(numero);
+
+function numeroComputer(number){ 
     return numero;
  }
 
  function pariDispari(num1,num2){
     if((num1+num2)%2==0){
-        return true
+        return 'pari';
+    }else{
+        return 'dispari';
     }
  }
 
- let somma=numeroUtente+numeroPc;
- console.log(somma)
+let somma=pariDispari(numeroUtente,numero);
+
+if(somma==scelta){
+    console.log('HAI VINTOOO!')
+}else{
+    console.log('hai perso :(')
+}
+
 
 
 
