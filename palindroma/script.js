@@ -1,5 +1,6 @@
 function isPalindrome(word){
     let wordArray=[];
+    wordArray.push(word);
     wordArray=word.split('');
     
     let arrayReverse=wordArray.reverse();
@@ -7,8 +8,10 @@ function isPalindrome(word){
     wordText=wordArray.toString();
     reverseText=arrayReverse.toString();
 
-    if(word==reverseText){
+    if(wordText===reverseText){
         return true;
+    }else{
+        return false;
     }
 }
 
