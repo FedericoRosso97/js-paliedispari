@@ -9,11 +9,13 @@ creo funzione:
 */ 
 
 let PariDispari=prompt('scegli pari o dispari')
-
+let scelta;
 if(PariDispari=='pari'){
     console.log('pari');
+    scelta='pari';
 }else if(PariDispari=='dispari'){
     console.log('dispari');
+    scelta='dispari';
 }else{
     let PariDispari=prompt('pleasee scegli pari o dispari')
 }
@@ -25,9 +27,9 @@ let numeroUtente=parseInt(prompt('scegli un numero da 1 a 5'));
 
 console.log(numeroUtente);
 
- function numeroComputer(numberPc){
+ function numeroComputer(number){
     let numeroPc=Math.floor((Math.random()*5)+1);
-    console.log(numeroPc);
+    console.log(numero);
  }
 
  function pariDispari(num1,num2){
@@ -35,4 +37,9 @@ console.log(numeroUtente);
         return true
     }
  }
+
+ let somma=numeroUtente+numeroPc;
+ console.log(somma)
+
+
 
